@@ -1,14 +1,34 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Resultat</title>
+    <link rel="stylesheet" href="{% static 'css/resultat.css' %}">
 </head>
 <body>
-    <h1>SUUIIIIIIIII</h1>
-    <a href="{% url 'main-page' %}">Precedant</a>
-    <p>
+
+    <ul>
+        <li>V</li>
+        <li>O</li>
+        <li>T</li>
+        <li>R</li>
+        <li>E</li>
+         <li></li>
+        <li>S</li>
+        <li>E</li>
+        <li>N</li>
+        <li>T</li>
+        <li>E</li>
+        <li>N</li>
+        <li>C</li>
+        <li>E</li>
+    </ul>
+    <a href="{% url 'main-page' %}">◀ Precedant</a>
+    <h1>
         {{answer}}
-    </p>
+    </h1>
+
+    <span>©credit : https://github.com/nouha404 </span>
 </body>
 </html>

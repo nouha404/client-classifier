@@ -33,7 +33,7 @@ def Formulaire(request):
             df = [[int(age), int(marital), int(job), int(education), int(default), int(housing), int(loan), int(pdays),
                    int(previous)]]
             eyes_pred = model.predict(df)
-            answer = ['Vous etes un bon client GG' if eyes_pred[0] == 0 else "Vous n'etes pas fiable"]
+            answer = 'Vous etes un bon client GG 🔥' if eyes_pred[0] == 0 else "Vous n'etes pas fiable ⛔"
 
             return render(request, 'Client/resultat.html', {'answer': answer})
     else:
