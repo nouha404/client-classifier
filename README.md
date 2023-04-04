@@ -27,5 +27,10 @@ Nous avons effectué un prétraitement des données pour gérer les valeurs manq
 
 ## Interface utilisateur 🖼️
 <p> Mis en page pas ouf mais c'est deja ca haha</p> 
-![texte alternatif](chemin/vers/image.jpg)
+
+<img src="./images/formulaire.PNG"
+/>
+<img src="./images/resultat.PNG"
+/>
+
 
