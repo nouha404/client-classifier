@@ -14,18 +14,18 @@ def Formulaire(request):
 
         if form.is_valid():
             age = form.cleaned_data['age']
-            marital = form.cleaned_data['marital']
-            job = form.cleaned_data['job']
+            etat_civile = form.cleaned_data['etat_civile']
+            profession = form.cleaned_data['profession']
             education = form.cleaned_data['education']
-            default = form.cleaned_data['default']
-            housing = form.cleaned_data['housing']
-            loan = form.cleaned_data['loan']
-            pdays = form.cleaned_data['pdays']
-            previous = form.cleaned_data['previous']
+            defaut_de_paiement = form.cleaned_data['defaut_de_paiement']
+            pret_immobilier = form.cleaned_data['pret_immobilier']
+            pret_personnel = form.cleaned_data['pret_personnel']
+            dernier_contact = form.cleaned_data['dernier_contact_avec_le_client']
+            contacts_precedent = form.cleaned_data['contacts_precedent']
 
             # Préparer les données pour la prédiction
-            df = [[int(age), int(marital), int(job), int(education), int(default), int(housing), int(loan), int(pdays),
-                   int(previous)]]
+            df = [[int(age), int(etat_civile), int(profession), int(education), int(defaut_de_paiement), int(pret_immobilier), int(pret_personnel), int(dernier_contact),
+                   int(contacts_precedent)]]
             eyes_pred = model.predict(df)
             answer = 'Vous etes un bon client GG 🔥' if eyes_pred[0] == 0 else "Vous n'etes pas fiable ⛔"
 
