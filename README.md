@@ -29,7 +29,3 @@ Nous avons effectué un prétraitement des données pour gérer les valeurs manq
 <p> Mis en page pas ouf mais c'est deja ca haha</p> 
 ![texte alternatif](chemin/vers/image.jpg)
 
-<video width="320" height="240" controls>
-  <source src="./video/reame.mp4" type="video/mp4">
-  Votre navigateur ne prend pas en charge la vidéo.
-</video>
