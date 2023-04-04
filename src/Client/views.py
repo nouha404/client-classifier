@@ -1,13 +1,7 @@
-import os.path
-from pathlib import Path
-
 from django.shortcuts import render
 from .forms import SignForm
 from joblib import load
 from pathlib import Path
-
-from joblib import load
-import numpy as np
 
 
 # Create your views here.
