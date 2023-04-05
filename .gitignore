@@ -1,2 +1,4 @@
 .env
 .idea
+src/Client/__pycache__
+src/Classifier/__pycache__
